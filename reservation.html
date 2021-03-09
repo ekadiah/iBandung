@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iBandung</title>
+    <link rel="stylesheet" type="text/css" media="all" href="style2.css">
+    <script type="text/Javascript" src="style.js"></script>
+</head>
+<body>
+	<div class="header">
+        <div class="logo">
+            <img src="profile.png" width="300px" height="auto">
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="wisata.html">Destination</a></li>
+                <li> <a href="reservation.html">Reservation</a></li>
+                <li> <a href="profil.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+		<div id="runningtext">
+		<marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+			Welcome to iBandung Reservation
+        </marquee> </div>
+        <div class="content">
+            <p> Kami menyediakan jasa layanan reservasi Hotel/Penginapan dan Travel, di sini kami akan memberikan tempat rekomendasi untuk anda dan keluarga
+            Kami memberikan fasilitas ang bisa dipilih untuk kenyamanan liburan anda. Anda bisa memilih perpaket untuk liburan anda. paketnya meliputi:
+            </p>
+            <ul><li>Paket 1: Hotel/Penginapan + Tiket Masuk Wisata + Travel(Kendaraan)</li>
+                <li>Paket 2: Hotel/Penginapan + Travel(Kendaraan)</li>
+                <li>Paket 3: Hotel/Penginapan</li>
+            </ul>
+            <p>Jika Anda berminat, silahkan isi form di bawah ini. Untuk kelanjutanya, kami akan menghubungi anda melalui Email/Whatsapp.</p>
+
+        </div>
+        <div class="isi">
+            <p class="regist">RESERVATION</p>
+            <div id="command">
+                <p>Please Enter your Data in Here for Reservation<br>
+                For Payment and anything we contact with Email or Whatsapp</p>
+            </div>
+                <FORM onsubmit="returnfalse">
+                <p>
+                    <label for="name">Nama</label>
+                    <input type="text" name="name" class="name" placeholder="Please enter your full name">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="email" placeholder="Please enter your Email" onblur="changeColor(this)">
+                </p>
+                <p>
+                    <label for="tujuan"> Tujuan Liburan</label>
+                    <input type="text" name="tujuan" class="tujuan">
+                </p>
+                <p>
+                    <label for="paket">Pilihan Paket:</label>
+                    <select name="paket" class="paket">
+                        <option></option>
+                        <option value="paket1">Paket 1(Hotel/Penginapan + Tiket Masuk Wisata + Travel(Kendaraan))</option>
+                        <option value="paket2">Paket 2(Hotel/Penginapan + Travel(Kendaraan))</option>
+                        <option value="paket3">Paket 3(Hotel/Penginapan)</option>
+                    </select>
+                </p>    
+                <p>
+                    <label for="dob">Tanggal Liburan</label>
+                    <input type="date" name="dob" class="dob" placeholder="mm/dd/yyyy">
+                </p>            
+                <p>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="male" class="male">
+                    <label for="male">Perempuan</label>
+                    <input type="radio" name="female" class="female">
+                    <label for="female">Laki-Laki</label>
+                </p>            
+                <p>
+                    <label for="address" class="address1">Alamat:</label>
+                    <textarea name="address" class="address" placeholder="Please enter your address"></textarea>
+                </p>
+                <p>
+                    <label for="phone">No Telepon:</label>
+                    <input type="text" id="phone" class="phone" placeholder="+62 - xxxxxx" onblur="changeColor(this)">
+                </p>                
+
+                <input type="submit" value="Resesrvation" onclick="sukses()"><br>
+
+                </FORM>
+            
+        </div>
+
+        
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="social-icons">
+                    <li><img src="facebook.png" width="40px" height="40px"></li>
+                    <li><img src="twitter.png" width="40px" height="40px"></li>
+                    <li><img src="instagram.png" width="40px" height="40px"></li>
+                    <li><img src="whatsapp.png" width="40px" height="40px"></li>
+                    <li><img src="linked.png" width="40px" height="40px"></li>
+                  </ul>
+                </div>
+                <div class="col-lg-12">
+                  <div class="copyright-text">
+                    <p>&copy; Copyright 2020 iBandung.Co</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+  
+</body>
+</html>
